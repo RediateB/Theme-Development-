@@ -33,7 +33,7 @@ get_header();
               By
               <span> <?php  the_author(); ?></span>
               /
-              <span>December 6, 2021</span>
+              <span><?php the_date()?></span>
             </p>
           </div>
         </div>
