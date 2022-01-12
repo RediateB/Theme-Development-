@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +27,9 @@ wp_head();
 ?>
 </head>
 <body>
+<?php
+get_header();
+?>
     <div>
         <img src="wp-content/themes/Themedevelopment/assets/images/wave.svg" alt="">
     </div>
@@ -116,64 +118,11 @@ wp_head();
         <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 50px;" >Latest Blog</h1>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-</body>
-</html>
-=======
-<?php
-
-get_header();
-?>
-<header style="background:url(https://images.pexels.com/photos/733475/pexels-photo-733475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);    background-size: cover;
-background-position: center; height: 650px; border-top: 6px solid #5385C1;"> 
-    <div class="container"> 
-        <div class="row"> 
-            <div class="col-md-12"> 
-                <div style="padding-top:250px;" class="te text-center text-white"> 
-                    <h1>Welcome to EDUCATION</h1>
-                    <p>A free theme for wordpress websites based on education</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<section id="about-section"> 
-    <div class="container"> 
-        <div class="row"> 
-            <div class="col-md-6"> 
-                <div class="about-text border-right"> 
-                    <h1>ABOUT US</h1>
-                    <p class="">some image</p>
-                    <button class="btn btn-primary">More</button>
-                </div>
-            </div>
-            <div class="col-md-6"> 
-                <div class="about-text border-right"> 
-                    <h1>ABOUT US</h1>
-                    <p>about us text</p>
-                    <button class="btn btn-primary">More</button>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-<?php
+    
+    <?php
 
 get_footer();
 
 ?>
-
-
->>>>>>> 32d6505b8c9f15ef4d7b7a327afbf81f1c2f771e
+</body>
+</html>
