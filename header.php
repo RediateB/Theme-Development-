@@ -23,7 +23,7 @@
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container "> 
-			<a class="navbar-brand header-link" href="#" >Edu</a>
+			<a class="navbar-brand header-link" href="#" ><?php bloginfo('name')?></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
