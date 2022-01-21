@@ -87,14 +87,14 @@ get_header();
                </div>
                <div class="col-md-4">
                   <div class="we_do_box we_do_box2">
-                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan2.png" alt="#"/></i>
+                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan1.png" alt="#"/></i>
                      <h4>Team meetings</h4>
                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="we_do_box we_do_box3">
-                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan3.png" alt="#"/></i>
+                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan1.png" alt="#"/></i>
                      <h4> Enroll Free </h4>
                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                   </div>
@@ -103,15 +103,17 @@ get_header();
          </div>
       </div>
 
-    <div class="container" style="margin-top: 40px;">
+ <div class="container" style="margin-top: 40px;">
         <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 150px; margin-bottom: 100px;" >About Us</h1>
-    </div>
-    <div style="margin-bottom: 40px;"><hr> </div>
+</div>
+<div style="margin-bottom: 40px;"><hr> </div>
     <div class="conatiner">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3">
-                <img src="<?php bloginfo('template_url')?>/assets/images/undraw_about_us_page_re_2jfm.svg" style="width: 100%; margin-bottom: 50px;" alt="">
+                <img src="
+                
+                /assets/images/undraw_about_us_page_re_2jfm.svg" style="width: 100%; margin-bottom: 50px;" alt="">
             </div>
             <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam pariatur vero minus reprehenderit non minima modi voluptates harum, totam doloremque nobis impedit reiciendis? Molestiae accusantium modi cupiditate facilis dolorem!
@@ -122,7 +124,37 @@ get_header();
             </div>
 
         </div>
+    </div> 
+    <div class="container" style="margin-top: 40px;">
+    <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 150px; margin-bottom: 100px;" >Social Media</h1>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="wrapper">
+    <div class="content">
+        <div class="col-md-6">
+        <div class="text">
+            <!-- <p>Check our social media platforms</p> -->
+            <a href="#" class="btn">Get Started</a>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="img">
+            <div class="social-icons">
+         <img src="<?php bloginfo('template_url')?>/assets/images/social-icon1.png" alt="#"/>
+           <img src="<?php bloginfo('template_url')?>/assets/images/social-icon2.png" alt="#"/>
+           <img src="<?php bloginfo('template_url')?>/assets/images/social-icon3.png" alt="#"/>
+           <img src="<?php bloginfo('template_url')?>/assets/images/social-icon4.png" alt="#"/>
+           <img src="<?php bloginfo('template_url')?>/assets/images/social-icon5.png" alt="#"/>
+            </div>
+           <img class="email-icon" src="<?php bloginfo('template_url')?>/assets/images/email-icon.png" alt="#"/>
+        </div>
     </div>
+</div>
+    </div>
+</div>
+</div>
+
     <div class="container" style="margin-top: 100px;">
         <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 50px;" >Latest Blog</h1>
     </div>
