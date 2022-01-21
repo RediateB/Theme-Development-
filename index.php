@@ -37,7 +37,8 @@ get_header();
                       <div class="row d_flex">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                           <div class="our_img">
-                            <figure><img src="images/our_img1.jpg" alt="#" /></figure>
+                          
+                            <figure><?php  the_post_thumbnail() ?></figure>
                           </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -65,9 +66,10 @@ get_header();
                                   </a>
                                 </li>
                                 <li>
-                                  <a href="#"
-                                    ><img src="images/comm.png" alt="#" />Comment</a
-                                  >
+                                  <a href="#">
+                                  <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                                    Comment
+                                  </a>
                                 </li>
                               </ul>
                             </div>
@@ -91,7 +93,8 @@ get_header();
                   <div class="row">
                   <div class="col-md-6 padding_bottom2">
                     <div class="our_img">
-                      <figure><img src="images/our_img3.jpg" alt="#" /></figure>
+                      
+                      <figure><?php  the_post_thumbnail() ?></figure>
                     </div>
                     <div class="our_text_box three_box">
                       <div class="post_box d_flex padding_top3">
@@ -108,7 +111,7 @@ get_header();
                           </li>
                           <li>
                             <a href="#">
-                              <img src="images/comm.png" alt="#" />
+                            <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
                               Comment
                             </a>
                           </li>
@@ -129,7 +132,7 @@ get_header();
                   ?>
                     <div class="col-md-6">
                       <div class="our_img">
-                        <figure><img src="images/our_img4.jpg" alt="#" /></figure>
+                        <figure><?php  the_post_thumbnail() ?></figure>
                       </div>
                       <div class="our_text_box three_box">
                         <div class="post_box d_flex padding_top3">
@@ -146,7 +149,7 @@ get_header();
                             </li>
                             <li>
                               <a href="#">
-                                <img src="images/comm.png" alt="#" />
+                                <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
                                 Comment
                               </a>
                             </li>
@@ -180,7 +183,7 @@ get_header();
                         <div class="row d_flex">
                           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="our_img">
-                              <figure><img src="images/our_img5.jpg" alt="#" /></figure>
+                              <figure><?php  the_post_thumbnail() ?></figure>
                             </div>
                           </div>
                           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -208,9 +211,10 @@ get_header();
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#"
-                                      ><img src="images/comm.png" alt="#" />Comment</a
-                                    >
+                                    <a href="#">
+                                    <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                                      Comment
+                                    </a>
                                   </li>
                                 </ul>
                               </div>
