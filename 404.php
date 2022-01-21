@@ -5,6 +5,7 @@ get_header(); ?>
 
 <div class="container text-center mt-5  ">
 
+<img src="<?php bloginfo('template_url')?>/assets/images/404.svg" style="width:40%;" alt="#"/>
 
     <h1 class="page-title"><?php esc_html_e('Oops! That page can&rsquo;t be found.', ' '); ?></h1>
     </header><!-- .page-header -->
@@ -15,11 +16,9 @@ get_header(); ?>
         <?php get_search_form(); ?>
 
     </div><!-- .page-content -->
+    
 
 
-</div><!-- .inner-wrap -->
-<div class ="footer" align="center"  > 
-      <!-- div align="center" -->
-  </div>
+
 <?php
 get_footer();
