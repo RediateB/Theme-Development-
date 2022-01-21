@@ -66,6 +66,43 @@ get_header();
 
         </div>
     </div>
+
+     <!-- we_do -->
+     <div id="we_do"  class="we_do">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2 style="text-align: center; padding-bottom: 3rem;">What we do?</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="we_do_box we_do_box1">
+                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan1.png" alt="#"/></i>
+                     <h4>Provide Courses </h4>
+                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="we_do_box we_do_box2">
+                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan2.png" alt="#"/></i>
+                     <h4>Team meetings</h4>
+                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="we_do_box we_do_box3">
+                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan3.png" alt="#"/></i>
+                     <h4> Enroll Free </h4>
+                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
     <div class="container" style="margin-top: 40px;">
         <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 150px; margin-bottom: 100px;" >About Us</h1>
     </div>
