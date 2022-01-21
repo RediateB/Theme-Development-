@@ -1,20 +1,14 @@
-body {
-  /* background-color: blueviolet; */
-}
 .header-link {
   color: brown;
 }
 
-
-
 /* 404 page */
-.page_content
-  {
-  background-image: url('/assets/images/404.svg');
+.page_content {
+  background-image: url("/assets/images/404.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-    }
+}
 /* .footer
   {
     height: 150px

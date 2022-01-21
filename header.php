@@ -19,6 +19,7 @@
 	<!-- style css -->
 	<link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/style-ThemeDevelopment.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/blog-page-style.css">
+	
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
