@@ -87,14 +87,14 @@ get_header();
                </div>
                <div class="col-md-4">
                   <div class="we_do_box we_do_box2">
-                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan1.png" alt="#"/></i>
+                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan2.png" alt="#"/></i>
                      <h4>Team meetings</h4>
                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="we_do_box we_do_box3">
-                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan1.png" alt="#"/></i>
+                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan3.png" alt="#"/></i>
                      <h4> Enroll Free </h4>
                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                   </div>
@@ -135,7 +135,7 @@ get_header();
         <div class="col-md-6">
         <div class="text">
             <!-- <p>Check our social media platforms</p> -->
-            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="btn" style="padding-top:5px; margin-top:10px;">Get Started</a>
         </div>
         </div>
         <div class="col-md-6">
