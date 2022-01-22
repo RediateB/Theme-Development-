@@ -13,7 +13,7 @@ get_header();
             <div class="col-md-5">
                 <div style="margin-top: 30px;" class="full">
                     <h1><strong class="cur">EDU</strong><br>Get free education </h1>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                        <p>We believe in providing quality content for students to get a better knowledge than anywhere else.</p>
                        
                 </div>
             </div>
