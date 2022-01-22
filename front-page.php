@@ -111,9 +111,9 @@ get_header();
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3">
-                <img src="
-                
-                /assets/images/undraw_about_us_page_re_2jfm.svg" style="width: 100%; margin-bottom: 50px;" alt="">
+            <img src="<?php bloginfo('template_url')?>/assets/images/undraw_about_us_page_re_2jfm.svg" style="width: 100%; margin-bottom: 50px;"  alt="#"/>
+
+                <!-- <img src="/assets/images/undraw_about_us_page_re_2jfm.svg" style="width: 100%; margin-bottom: 50px;" alt=""> -->
             </div>
             <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam pariatur vero minus reprehenderit non minima modi voluptates harum, totam doloremque nobis impedit reiciendis? Molestiae accusantium modi cupiditate facilis dolorem!
