@@ -555,6 +555,50 @@ a.btn {
 a.btn:hover {
   background-color: #615c59;
 }
+/* single css */
+.wp-block-columns {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.wp-block-column {
+  width: 100%;
+}
+
+.has-text-align-center {
+  text-align: center;
+}
+.has-text-align-right {
+  text-align: right;
+}
+form .logged-in-as {
+  display: block !important;
+}
+form .logged-in-as a {
+  color: #38c8a8 !important;
+}
+form .comment-form-comment label {
+  display: none !important;
+}
+form .comment-form-comment textarea {
+  background-color: rgb(228, 228, 228) !important;
+  border: none;
+}
+form .form-submit {
+  display: block !important;
+}
+form .form-submit input {
+  background-color: #38c8a8 !important;
+  color: #fff;
+  font-weight: 400;
+  border: none !important;
+  padding: 15px;
+}
+.single-page-thumbnail{
+  padding-bottom: 2rem;
+}
+/* end of singles css */
 /* end of contact us  */
 
 
