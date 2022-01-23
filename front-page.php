@@ -108,22 +108,7 @@ get_header();
 </div>
 <div style="margin-bottom: 40px;"><hr> </div>
     <div class="conatiner">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-            <img src="<?php bloginfo('template_url')?>/assets/images/undraw_about_us_page_re_2jfm.svg" style="width: 100%; margin-bottom: 50px;"  alt="#"/>
-
-                <!-- <img src="/assets/images/undraw_about_us_page_re_2jfm.svg" style="width: 100%; margin-bottom: 50px;" alt=""> -->
-            </div>
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam pariatur vero minus reprehenderit non minima modi voluptates harum, totam doloremque nobis impedit reiciendis? Molestiae accusantium modi cupiditate facilis dolorem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime porro vero odio nostrum molestias illum quis, voluptate ratione? Ullam fugit voluptatibus nesciunt, consequuntur in explicabo nulla autem harum optio molestiae!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt labore quod eos iusto repellat facilis sequi mollitia saepe et voluptatibus sapiente hic, ad tempora in suscipit. Dignissimos dolore quam aspernatur!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur, maxime aut praesentium ea tempora culpa eius accusamus porro accusantium nulla eligendi rerum quos beatae! Illum, reiciendis sit. Officiis, minus!
-                </p>
-            </div>
-
-        </div>
+        
     </div> 
     <div class="container" style="margin-top: 40px;">
     <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 150px; margin-bottom: 100px;" >Social Media</h1>
