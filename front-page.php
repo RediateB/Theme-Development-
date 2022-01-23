@@ -12,8 +12,12 @@ get_header();
             </div>
             <div class="col-md-5">
                 <div style="margin-top: 30px;" class="full">
-                    <h1><strong class="cur">EDU</strong><br>Get free education </h1>
-                        <p>We believe in providing quality content for students to get a better knowledge than anywhere else.</p>
+                    <h1><strong class="cur">
+                        <?php echo get_bloginfo( 'name' )?>
+                    </strong><br></h1>
+                        <p>
+                        <?php echo get_bloginfo( 'description' )?>
+                        </p>
                        
                 </div>
             </div>

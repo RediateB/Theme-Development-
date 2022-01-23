@@ -325,10 +325,10 @@ button {
   float: left;
   padding: 0;
 }
-/* .left2 {
+.left2 {
   padding-left: 30px;
-} */
-ul.like {
+}
+/* ul.like {
   float: right;
 }
 ul.like li {
@@ -340,7 +340,7 @@ ul.like li a {
 }
 ul.like li img {
   padding: 0px 10px 0px 40px;
-}
+} */
 
 /** end three section **/
 .padding_flot {
@@ -482,7 +482,7 @@ ul.padding_left2 li img {
   top: 0;
   left: 0;
   width: 60px;
-  height: 600px;
+  height: 60px;
   border-radius: 50px;
   /* background-color: #63ffc2; */
   z-index: -1;
@@ -543,7 +543,7 @@ ul.padding_left2 li img {
 a.btn {
   display: inline-block;
   width: 180px;
-  height: 600px;
+  height: 60px;
   line-height: 60px;
   background-color: #000;
   color: #fff;
@@ -556,3 +556,5 @@ a.btn:hover {
   background-color: #615c59;
 }
 /* end of contact us  */
+
+

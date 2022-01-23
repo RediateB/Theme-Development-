@@ -47,31 +47,16 @@ get_header();
                                 <a href="<?php the_permalink()?>"><?php the_title(); ?> </a>
                             </h3>
                             <p>
-                              It is a long established fact that a reader will be
-                              distracted by the readable content of a page when looking
-                              at its layout. The point of using Lorem Ipsum is that it
-                              has a more-or-less normal distribution of letters, as
-                              opposed to using 'Content here, content here', making it
-                              look like readable English. Many desktop publishing
-                              packages and web page editors now use Lorem Ipsum as their
-                              default model
+                            <?php
+                                the_excerpt();?>
                             </p>
                             <div class="post_box padding_bottom1">
-                              <h4 class="flot_left1">Post By : Blogger</h4>
-                              <ul class="like">
-                                <li>
-                                  <a href="#">
-                                  <img src="<?php bloginfo('template_url')?>/assets/images/like.png" alt="#" />
-                                    Like
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                  <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
-                                    Comment
-                                  </a>
-                                </li>
-                              </ul>
+                              <h4 class="flot_left1">Post By : <?php  the_author(); ?></h4>
+                              <h4 class="flot_left1 left2">Date : <?php  the_date(); ?></h4>
+                              <h4 class="flot_left1 left2">
+                                <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                                      <?php comments_number()?>
+                              </h4>
                             </div>
                           </div>
                         </div>
@@ -101,27 +86,19 @@ get_header();
                         <h3 class="awesome padding_flot">
                             <a href="<?php the_permalink()?>"><?php the_title(); ?> </a>
                         </h3>
-                        <h4 class="flot_left1">Post By : Blogger</h4>
-                        <ul class="like padding_left2">
-                          <li>
-                            <a href="#">
-                            <img src="<?php bloginfo('template_url')?>/assets/images/like.png" alt="#" />
-                              Like
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                            <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
-                              Comment
-                            </a>
-                          </li>
-                        </ul>
+
+                        <p>
+                          <?php
+                                    the_excerpt();?>
+                        </p>
+                        <h4 class="flot_left1">Post By : <?php  the_author(); ?></h4>
+                        <h4 class="flot_left1 left2">Date : <?php  the_date(); ?></h4>
+                        <h4 class="flot_left1 left2">
+                        <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                              <?php comments_number()?>
+                        </h4>
                       </div>
-                      <p>
-                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minimquis nostrud exercitation ullamco laboris
-                      </p>
+                      
                     </div>
                   </div>
                <?php
@@ -139,27 +116,19 @@ get_header();
                           <h3 class="awesome padding_flot">
                               <a href="<?php the_permalink()?>"><?php the_title(); ?> </a>
                           </h3>
-                          <h4 class="flot_left1">Post By : Blogger</h4>
-                          <ul class="like padding_left2">
-                            <li>
-                              <a href="#">
-                                <img src="<?php bloginfo('template_url')?>/assets/images/like.png" alt="#" />
-                                Like
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
-                                Comment
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <p>
-                          ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                          enim ad minimquis nostrud exercitation ullamco laboris
+
+                          <p>
+                        <?php
+                                the_excerpt();?>
                         </p>
+                          <h4 class="flot_left1">Post By : <?php  the_author(); ?></h4>
+                          <h4 class="flot_left1 left2">Date : <?php  the_date(); ?></h4>
+                          <h4 class="flot_left1 left2">
+                              <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                                    <?php comments_number()?>
+                          </h4>
+                        </div>
+                        
                       </div>
                     </div>
                 </div>
@@ -192,31 +161,17 @@ get_header();
                                   <a href="<?php the_permalink()?>"><?php the_title(); ?> </a>
                               </h3>
                               <p>
-                                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit
-                                esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id
+                              <?php
+                                the_excerpt();?>
+                                
                               </p>
                               <div class="post_box padding_bottom1">
-                                <h4 class="flot_left1">Post By : Blogger</h4>
-                                <ul class="like">
-                                  <li>
-                                    <a href="#">
-                                      <img src="<?php bloginfo('template_url')?>/assets/images/like.png" alt="#" />
-                                      Like
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                    <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
-                                      Comment
-                                    </a>
-                                  </li>
-                                </ul>
+                                <h4 class="flot_left1">Post By : <?php  the_author(); ?></h4>
+                                <h4 class="flot_left1 left2">Date : <?php  the_date(); ?></h4>
+                                <h4 class="flot_left1 left2">
+                                <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                                      <?php comments_number()?>
+                                </h4>
                               </div>
                             </div>
                           </div>
