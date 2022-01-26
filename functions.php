@@ -1,12 +1,6 @@
 <?php
-    function load_style_css(){
-        wp_register_style('style-ThemeDevelopment', get_template_directory_uri(  ).'/assets/css/style-ThemeDevelopment.css', array(), rand(111,9999), 'all');
-        wp_enqueue_style('style-ThemeDevelopment');
-    }
 
-
-    add_action('wp_enqueue_scripts', 'load_style_css');
-
+<<<<<<< HEAD
     
 
     if(get_page_by_title("Contact") == null)
@@ -25,5 +19,16 @@
     }
     
 
+=======
+    // Support Thumbnails
+    add_theme_support( 'post-thumbnails' );
+
+    // change excerpt more outout
+    function new_excerpt_more( $more ) {
+        return ' . . . .';
+        
+    }
+    add_filter('excerpt_more', 'new_excerpt_more');
+>>>>>>> e3164aca0bce37561c423d2e9849c2512fd78901
 
 ?>

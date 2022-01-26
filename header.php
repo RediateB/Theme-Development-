@@ -7,9 +7,6 @@
     <title><?php bloginfo('name')?></title>
 	<!-- Bootstrap CDN -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    
-	
-    
     <!-- End of  Bootstrap CDN -->
 
     <!-- fevicon
@@ -19,6 +16,7 @@
 	<!-- style css -->
 	<link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/style-ThemeDevelopment.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/blog-page-style.css">
+	
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
@@ -37,7 +35,10 @@
 				<a class="nav-link header-link" href="#">About</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link header-link" href="#">Service</a>
+				<a class="nav-link header-link" href="#">Blog</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link header-link" href="#">Contact</a>
 			  </li>
 			</ul>
 			
