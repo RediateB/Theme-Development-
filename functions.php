@@ -56,6 +56,6 @@
     add_action('after_setup_theme', 'themetest_load_bootstrap_navwalker');
 
 
-    require_once(get_template_directory( ).'/functions/Services-Customization.php');
+    // require_once(get_template_directory( ).'/functions/Services-Customization.php');
 
 ?>
