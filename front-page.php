@@ -3,7 +3,7 @@
 get_header();
 ?>
     <div>
-        <img src="<?php bloginfo('template_url')?>/assets/images/wave.svg" alt="">
+        <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/wave.svg" alt="">
     </div>
     <div class="container">
         <div class="row">
@@ -23,7 +23,7 @@ get_header();
             </div>
             <div class="col-md-4">
                 <div class="full text_align_center">
-                    <img class="slide_img" src="<?php bloginfo('template_url')?>/assets/images/undraw_education_f8ru.svg" width="100%" style="padding:10px; margin-top: 30px; margin-bottom: 50px; " alt="#" /> 
+                    <img class="slide_img" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/undraw_education_f8ru.svg" width="100%" style="padding:10px; margin-top: 30px; margin-bottom: 50px; " alt="#" /> 
                 </div>
             </div>
             <div class="col-md-1">
@@ -49,12 +49,12 @@ get_header();
           <div class="card-body">
             <h3 class="card-title">
                 <?php 
-                    echo get_theme_mod('Admin-name-1-settings');
+                    echo esc_html(get_theme_mod('Admin-name-1-settings'));
                 ?>
             </h3>
             <p class="card-text">
                 <?php 
-                    echo get_theme_mod('Admin-description-1-settings');
+                    echo esc_html (get_theme_mod('Admin-description-1-settings'));
                 ?>            
             </p>
           </div>
@@ -76,12 +76,12 @@ get_header();
           <div class="card-body">
             <h3 class="card-title">
             <?php 
-                    echo get_theme_mod('Admin-name-2-settings');
+                    echo esc_html(get_theme_mod('Admin-name-2-settings'));
                 ?>
             </h3>
             <p class="card-text">
                 <?php 
-                    echo get_theme_mod('Admin-description-2-settings');
+                    echo esc_html(get_theme_mod('Admin-description-2-settings'));
                 ?> 
             </p>
           </div>
@@ -102,12 +102,12 @@ get_header();
           <div class="card-body">
             <h3 class="card-title">
             <?php 
-                    echo get_theme_mod('Admin-name-3-settings');
+                    echo esc_html(get_theme_mod('Admin-name-3-settings'));
                 ?>
             </h3>
                 <p class="card-text">
                   <?php 
-                      echo get_theme_mod('Admin-description-3-settings');
+                      echo esc_html(get_theme_mod('Admin-description-3-settings'));
                   ?>            
                 </p>
           </div>
@@ -130,45 +130,45 @@ get_header();
             <div class="row">
                <div class="col-md-4">
                   <div class="we_do_box we_do_box1">
-                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan1.png" alt="#"/></i>
+                     <i><img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/plan1.png" alt="#"/></i>
                      <h4>
                        <?php 
-                       echo get_theme_mod('service-title-1-settings');
+                       echo esc_html(get_theme_mod('service-title-1-settings'));
                        ?>
                         </h4>
                      <p> 
                      <?php 
-                       echo get_theme_mod('service-body-1-settings');
+                       echo esc_html(get_theme_mod('service-body-1-settings'));
                        ?>
                      </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="we_do_box we_do_box2">
-                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan2.png" alt="#"/></i>
+                     <i><img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/plan2.png" alt="#"/></i>
                      <h4>
                       <?php 
-                        echo get_theme_mod('service-title-2-settings');
+                        echo esc_html(get_theme_mod('service-title-2-settings'));
                         ?>
                      </h4>
                      <p> 
                       <?php 
-                        echo get_theme_mod('service-body-2-settings');
+                        echo esc_html(get_theme_mod('service-body-2-settings'));
                         ?>
                      </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="we_do_box we_do_box3">
-                     <i><img src="<?php bloginfo('template_url')?>/assets/images/plan3.png" alt="#"/></i>
+                     <i><img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/plan3.png" alt="#"/></i>
                      <h4> 
                         <?php 
-                          echo get_theme_mod('service-title-3-settings');
+                          echo esc_html(get_theme_mod('service-title-3-settings'));
                           ?>
                       </h4>
                      <p>
                         <?php 
-                          echo get_theme_mod('service-body-3-settings');
+                          echo esc_html(get_theme_mod('service-body-3-settings'));
                           ?>
                      </p>
                   </div>
@@ -201,13 +201,13 @@ get_header();
         <div class="col-md-6">
         <div class="img">
             <div class="social-icons">
-         <img src="<?php bloginfo('template_url')?>/assets/images/social-icon1.png" alt="#"/>
-           <img src="<?php bloginfo('template_url')?>/assets/images/social-icon2.png" alt="#"/>
-           <img src="<?php bloginfo('template_url')?>/assets/images/social-icon3.png" alt="#"/>
-           <img src="<?php bloginfo('template_url')?>/assets/images/social-icon4.png" alt="#"/>
-           <img src="<?php bloginfo('template_url')?>/assets/images/social-icon5.png" alt="#"/>
+         <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/social-icon1.png" alt="#"/>
+           <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/social-icon2.png" alt="#"/>
+           <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/social-icon3.png" alt="#"/>
+           <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/social-icon4.png" alt="#"/>
+           <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/social-icon5.png" alt="#"/>
             </div>
-           <img class="email-icon" src="<?php bloginfo('template_url')?>/assets/images/email-icon.png" alt="#"/>
+           <img class="email-icon" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/email-icon.png" alt="#"/>
         </div>
     </div>
 </div>
@@ -241,7 +241,7 @@ get_header();
 
               <?php else : ?>
               
-                <p><?php __('No News'); ?></p>
+                <p><?php __('No News', "eduthemealulu"); ?></p>
                 <?php endif; ?>
                     </div>
         </div>

@@ -17,6 +17,18 @@
         </div>
       </div>
 
+      <?php
+            wp_nav_menu( array(
+                "theme_location" => 'top-menu',
+                'depth' => '2',
+                'container' => 'div',
+                'container_id' => "bs-example-navbar-collapse-1",
+                'menu_class' => 'nav navbar-nav',
+                'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                'walker' => new WP_Bootstrap_Navwalker(),
+                ) )
+        ?>
+
       <div class="copyright">
       This website copyright© by team alulu
 </div>

@@ -1,29 +1,29 @@
 <?php
 
 // Homepage Administrators  Customization 
-function EduTheme_about_page_customize_register($wp_customize){
+function eduthemealulu_about_page_customize_register($wp_customize){
     $wp_customize->add_panel('about_setting', array(
         'priority' => 15,
-        'title' => __('About', 'EduTheme'),
-        'description'      => __( 'About Page details', 'EduTheme' ),
+        'title' => __('About', 'eduthemealulu'),
+        'description'      => __( 'About Page details', 'eduthemealulu' ),
     ));
 
     // Admin 1 Title Edit
     $wp_customize->add_section("about-title-section", array(
-        'title' => __("About Title", "EduTheme"),
+        'title' => __("About Title", "eduthemealulu"),
         'priority' => 1,
         'panel' => 'about_setting'
     ));
 
             
     $wp_customize->add_setting("about-title-settings", array(
-        'default' => __("Edu online learning system"),
+        'default' => __("Edu online learning system", "eduthemealulu"),
         'transport' => 'refresh',
         'sanitize_callback' => $sanitize_callback,
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'about_page_customization_name', array(
-        'label' => __('Change Admin', 'EduTheme'),
+        'label' => __('Change Admin', 'eduthemealulu'),
         'section' => 'about-title-section', 
         'settings' => 'about-title-settings'
     )));
@@ -31,7 +31,7 @@ function EduTheme_about_page_customize_register($wp_customize){
 
             // Admin 1 Title Edit
             $wp_customize->add_section("about-description-section", array(
-                'title' => __("About Description", "EduTheme"),
+                'title' => __("About Description", "eduthemealulu"),
                 'priority' => 2,
                 'panel' => 'about_setting'
             ));
@@ -50,13 +50,13 @@ function EduTheme_about_page_customize_register($wp_customize){
                                 Dignissimos dolore quam aspernatu r! Lorem, ipsum dolor sit amet consectetur 
                                 adipisicing elit. Ipsa tenetur, maxime aut praesentium ea tempora culpa eius 
                                 accusamus porro accusantium nulla eligendi rerum quos beatae! Illum, reiciendis 
-                                sit. Offici is, minus!"),
+                                sit. Offici is, minus!", "eduthemealulu"),
                 'transport' => 'refresh',
                 'sanitize_callback' => $sanitize_callback,
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'about_page_customization_desc', array(
-                'label' => __('Change Admin', 'EduTheme'),
+                'label' => __('Change Admin', 'eduthemealulu'),
                 'section' => 'about-description-section', 
                 'settings' => 'about-description-settings'
             )));
@@ -65,7 +65,7 @@ function EduTheme_about_page_customize_register($wp_customize){
 
                         // Admin 1 Image edit
                         $wp_customize->add_section('about-image-section', array(
-                            'title' => __("About Image", 'EduTheme'),
+                            'title' => __("About Image", 'eduthemealulu'),
                             'priority' => 3,
                             'panel' => 'about_setting'
                         ));
@@ -77,7 +77,7 @@ function EduTheme_about_page_customize_register($wp_customize){
                         ));
                         
                         $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'about_page_customization_img', array(
-                            'label' => __('Change Admin', 'EduTheme'),
+                            'label' => __('Change Admin', 'eduthemealulu'),
                             'section' => 'about-image-section',
                             'settings' => 'about-image-settings',
                             'height'=>100, // cropper Height
@@ -91,5 +91,5 @@ function EduTheme_about_page_customize_register($wp_customize){
     
 }
 
-add_action('customize_register', 'EduTheme_about_page_customize_register');
+add_action('customize_register', 'eduthemealulu_about_page_customize_register');
 ?>

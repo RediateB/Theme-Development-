@@ -1,11 +1,11 @@
 <?php
 
 // adding sidebar
-function EduTheme_add_sidebar(){
+function eduthemealulu_add_sidebar(){
 
     register_sidebar(
         array(
-            'name'=> __("Footer Sidebar 1", 'EduTheme'),
+            'name'=> __("Footer Sidebar 1", 'eduthemealulu'),
             'id' => 'footer-sidebar-1',
             'before_widget' => '<div>',
             'after_widget' => '<div>',
@@ -16,7 +16,7 @@ function EduTheme_add_sidebar(){
 
     register_sidebar(
         array(
-            'name'=> __("Footer Sidebar 2", 'EduTheme'),
+            'name'=> __("Footer Sidebar 2", 'eduthemealulu'),
             'id' => 'footer-sidebar-2',
             'before_widget' => '<div>',
             'after_widget' => '<div>',
@@ -27,7 +27,7 @@ function EduTheme_add_sidebar(){
 
     register_sidebar(
         array(
-            'name'=> __("Footer Sidebar 3", 'EduTheme'),
+            'name'=> __("Footer Sidebar 3", 'eduthemealulu'),
             'id' => 'footer-sidebar-3',
             'before_widget' => '<div>',
             'after_widget' => '<div>',
@@ -37,6 +37,6 @@ function EduTheme_add_sidebar(){
     );
 }
 
-add_action('widgets_init', 'EduTheme_add_sidebar');
+add_action('widgets_init', 'eduthemealulu_add_sidebar');
 
 ?>

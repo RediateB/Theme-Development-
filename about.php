@@ -26,12 +26,12 @@ get_header();
             <div class="col-md-5"style=" marign-right: 5px;">
                 <h1>
                 <?php 
-                    echo get_theme_mod('about-title-settings');
+                    echo esc_html(get_theme_mod('about-title-settings'));
                 ?>
                 </h1>
                 <p> 
                 <?php 
-                    echo get_theme_mod('about-description-settings');
+                    echo esc_html(get_theme_mod('about-description-settings'));
                 ?>
                 </p>
             </div>

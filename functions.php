@@ -49,8 +49,8 @@
     function themetest_add_menu(){
         register_nav_menus(
             array(
-              'top-menu' => __( 'Top Menu' ),
-              'footer-menu' => __( 'Footer Menu' )
+              'top-menu' => __( 'Top Menu', "eduthemealulu" ),
+              'footer-menu' => __( 'Footer Menu', "eduthemealulu" )
             )
           );
     }
@@ -60,11 +60,11 @@
 
 
     // boootstrap navbar config
-    function themetest_load_bootstrap_navwalker(){
+    function eduthemealulu_load_bootstrap_navwalker(){
         require_once get_template_directory().'/utils/class-wp-bootstrap-navwalker.php';
     }
 
-    add_action('after_setup_theme', 'themetest_load_bootstrap_navwalker');
+    add_action('after_setup_theme', 'eduthemealulu_load_bootstrap_navwalker');
 
 
 
