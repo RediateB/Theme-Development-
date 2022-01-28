@@ -37,6 +37,8 @@
     require_once(get_template_directory( ).'/functions/Color-Customization.php');
     require_once(get_template_directory( ).'/functions/Footer-Widgets.php');
     require_once(get_template_directory( ).'/functions/About-page-Customization.php');
+    require_once(get_template_directory( ).'/functions/Typography-Customization.php');
+
 
 
     // menu support
