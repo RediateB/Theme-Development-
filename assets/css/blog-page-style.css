@@ -287,7 +287,10 @@ button {
   align-items: center;
   flex-wrap: wrap;
 }
-
+.site-logo-img{
+  padding-right: 10px;
+  margin-top: 2px;
+}
 /** blog_main section **/
 .blog_main {
   margin-top: 85px;
@@ -445,7 +448,6 @@ ul.padding_left2 li img {
 /* contact us  */
 .wrapper {
   position: relative;
-  height: 100vh;
   overflow: hidden;
 }
 

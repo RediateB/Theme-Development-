@@ -15,7 +15,7 @@ get_header();
                     <h1><strong class="cur">
                         <?php echo get_bloginfo( 'name' )?>
                     </strong><br></h1>
-                        <p>
+                        <p class="site_desc">
                         <?php echo get_bloginfo( 'description' )?>
                         </p>
                        
@@ -37,33 +37,80 @@ get_header();
         <div class="row">
            <div class="card-group">
         <div class="card" style="margin-right: 30px;">
-          <img class="card-img-top" src="<?php bloginfo('template_url')?>/assets/images/sharon-mccutcheon-O2u6gA2esAI-unsplash.jpg"  alt="Card image cap">
+            <?php
+                function get_admin_1_image_url() {
+                    if ( get_theme_mod( 'Admin-image-1-settings' ) > 0 ) {
+                        return wp_get_attachment_url( get_theme_mod( 'Admin-image-1-settings' ) );
+                    } else {
+                        return get_template_directory_uri() . '/assets/images/aaron-burden-6jYoil2GhVk-unsplash.jpg';
+                    }
+                }
+              ?>
+            <img src="<?php echo esc_url( get_admin_1_image_url() ); ?>">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h3 class="card-title">
+                <?php 
+                    echo get_theme_mod('Admin-name-1-settings');
+                ?>
+            </h3>
+            <p class="card-text">
+                <?php 
+                    echo get_theme_mod('Admin-description-1-settings');
+                ?>            
+            </p>
           </div>
-          <div class="card-footer">
-            
-          </div>
+
         </div>
+
+
         <div class="card" style="margin-right: 30px;" >
-          <img class="card-img-top" src="<?php bloginfo('template_url')?>/assets/images/aaron-burden-6jYoil2GhVk-unsplash.jpg" alt="Card image cap">
+          <?php
+                function get_admin_2_image_url() {
+                    if ( get_theme_mod( 'Admin-image-2-settings' ) > 0 ) {
+                        return wp_get_attachment_url( get_theme_mod( 'Admin-image-2-settings' ) );
+                    } else {
+                        return get_template_directory_uri() . '/assets/images/aaron-burden-6jYoil2GhVk-unsplash.jpg';
+                    }
+                }
+            ?>
+            <img src="<?php echo esc_url( get_admin_2_image_url() ); ?>">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            
+            <h3 class="card-title">
+            <?php 
+                    echo get_theme_mod('Admin-name-2-settings');
+                ?>
+            </h3>
+            <p class="card-text">
+                <?php 
+                    echo get_theme_mod('Admin-description-2-settings');
+                ?> 
+            </p>
           </div>
         </div>
+
+
         <div class="card">
-          <img class="card-img-top" src="<?php bloginfo('template_url')?>/assets/images/md-duran-1VqHRwxcCCw-unsplash.jpg" alt="Card image cap">
+              <?php
+                function get_admin_3_image_url() {
+                    if ( get_theme_mod( 'Admin-image-2-settings' ) > 0 ) {
+                        return wp_get_attachment_url( get_theme_mod( 'Admin-image-3-settings' ) );
+                    } else {
+                        return get_template_directory_uri() . '/assets/images/aaron-burden-6jYoil2GhVk-unsplash.jpg';
+                    }
+                }
+                ?>
+                <img src="<?php echo esc_url( get_admin_3_image_url() ); ?>">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-           
+            <h3 class="card-title">
+            <?php 
+                    echo get_theme_mod('Admin-name-3-settings');
+                ?>
+            </h3>
+                <p class="card-text">
+                  <?php 
+                      echo get_theme_mod('Admin-description-3-settings');
+                  ?>            
+                </p>
           </div>
         </div>
       </div>
@@ -85,22 +132,46 @@ get_header();
                <div class="col-md-4">
                   <div class="we_do_box we_do_box1">
                      <i><img src="<?php bloginfo('template_url')?>/assets/images/plan1.png" alt="#"/></i>
-                     <h4>Provide Courses </h4>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                     <h4>
+                       <?php 
+                       echo get_theme_mod('service-title-1-settings');
+                       ?>
+                        </h4>
+                     <p> 
+                     <?php 
+                       echo get_theme_mod('service-body-1-settings');
+                       ?>
+                     </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="we_do_box we_do_box2">
                      <i><img src="<?php bloginfo('template_url')?>/assets/images/plan2.png" alt="#"/></i>
-                     <h4>Team meetings</h4>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                     <h4>
+                      <?php 
+                        echo get_theme_mod('service-title-2-settings');
+                        ?>
+                     </h4>
+                     <p> 
+                      <?php 
+                        echo get_theme_mod('service-body-2-settings');
+                        ?>
+                     </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="we_do_box we_do_box3">
                      <i><img src="<?php bloginfo('template_url')?>/assets/images/plan3.png" alt="#"/></i>
-                     <h4> Enroll Free </h4>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                     <h4> 
+                        <?php 
+                          echo get_theme_mod('service-title-3-settings');
+                          ?>
+                      </h4>
+                     <p>
+                        <?php 
+                          echo get_theme_mod('service-body-3-settings');
+                          ?>
+                     </p>
                   </div>
                </div>
             </div>
@@ -124,7 +195,10 @@ get_header();
         <div class="col-md-6">
         <div class="text">
             <!-- <p>Check our social media platforms</p> -->
-            <a href="#" class="btn" style="padding-top:5px; margin-top:10px;">Get Started</a>
+            <p>
+
+                <a href="#" class="btn" style="padding-top:0px; padding-left:20px; margin-top:10px;">Get Started</a>
+            </p>
         </div>
         </div>
         <div class="col-md-6">
@@ -146,6 +220,27 @@ get_header();
 
     <div class="container" style="margin-top: 100px;">
         <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 50px;" >Latest Blog</h1>
+
+        <?php 
+   // the query
+   $the_query = new WP_Query( array(
+    //  'category_name' => 'all',
+      'posts_per_page' => 3,
+   )); 
+?>
+
+<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+    <?php the_title(); ?>
+    <?php the_excerpt(); ?>
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+
+<?php else : ?>
+  <p><?php __('No News'); ?></p>
+<?php endif; ?>
     </div>
 
     

@@ -1,5 +1,7 @@
 <footer style="padding: 21px;"> 
 		<div class="container"> 
+    <?php dynamic_sidebar('left-sidebar-1')?>
+    <?php dynamic_sidebar('left-sidebar-2')?>
 			<div class="row"> 
 				<div class="col-md-4"> 
 					This website copyright© by team alulu
