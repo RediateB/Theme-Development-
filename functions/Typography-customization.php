@@ -5,14 +5,14 @@ function EduTheme_typography_customize_register($wp_customize){
 
     $wp_customize->add_panel('font_typography_setting', array(
         'priority' => 12,
-        'title' => ('Typography', 'EduTheme'),
-        'description'      => ( 'Customization typography for different texts', 'EduTheme' ),
+        'title' => __('Typography', 'EduTheme'),
+        'description'      => __( 'Customization typography for different texts', 'EduTheme' ),
     ));
 
 
     // Site Title Edit
     $wp_customize->add_section("H1-typo-section", array(
-        'title' => ("Site Title", "EduTheme"),
+        'title' => __("Site Title", "EduTheme"),
         'priority' => 1,
         'panel' => 'font_typography_setting'
     ));
@@ -24,7 +24,7 @@ function EduTheme_typography_customize_register($wp_customize){
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'H1_typo_customization', array(
-        'label' => ('Change typography', 'EduTheme'),
+        'label' => __('Change typography', 'EduTheme'),
         'section' => 'H1-typo-section', 
         'settings' => 'H1-typo-settings'
     )));
@@ -33,7 +33,7 @@ function EduTheme_typography_customize_register($wp_customize){
 
             // Site Description Edit
             $wp_customize->add_section("P-typo-section", array(
-                'title' => ("Site Description", "EduTheme"),
+                'title' => __("Site Description", "EduTheme"),
                 'priority' => 2,
                 'panel' => 'font_typography_setting'
             ));
