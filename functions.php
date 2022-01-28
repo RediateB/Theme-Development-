@@ -1,6 +1,7 @@
 <?php
 
-    
+    add_theme_support( 'automatic-feed-links' );
+    add_theme_support( "title-tag" );
 
     if(get_page_by_title("Contact") == null)
     {
@@ -38,7 +39,7 @@
 
 
     // menu support
-    add_theme_support('menus');
+    register_nav_menus();
 
 
     // add nav

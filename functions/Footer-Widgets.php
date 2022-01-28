@@ -1,12 +1,12 @@
 <?php
 
 // adding sidebar
-function themetest_add_sidebar(){
+function EduTheme_add_sidebar(){
 
     register_sidebar(
         array(
-            'name'=> __("Left-Sidebar-1", 'themetest'),
-            'id' => 'left-sidebar-1',
+            'name'=> __("Footer Sidebar 1", 'EduTheme'),
+            'id' => 'footer-sidebar-1',
             'before_widget' => '<div>',
             'after_widget' => '<div>',
             'before_title' => '<h2 class="rounded">',
@@ -16,8 +16,19 @@ function themetest_add_sidebar(){
 
     register_sidebar(
         array(
-            'name'=> __("Left Sidebar-2", 'themetest'),
-            'id' => 'left-sidebar-2',
+            'name'=> __("Footer Sidebar 2", 'EduTheme'),
+            'id' => 'footer-sidebar-2',
+            'before_widget' => '<div>',
+            'after_widget' => '<div>',
+            'before_title' => '<h2 class="rounded">',
+            'after_widget' => '</h2>',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name'=> __("Footer Sidebar 3", 'EduTheme'),
+            'id' => 'footer-sidebar-3',
             'before_widget' => '<div>',
             'after_widget' => '<div>',
             'before_title' => '<h2 class="rounded">',
@@ -26,6 +37,6 @@ function themetest_add_sidebar(){
     );
 }
 
-add_action('widgets_init', 'themetest_add_sidebar');
+add_action('widgets_init', 'EduTheme_add_sidebar');
 
 ?>

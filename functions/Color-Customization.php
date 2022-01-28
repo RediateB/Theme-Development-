@@ -20,13 +20,14 @@ function color_customize_register($wp_customize){
             
     $wp_customize->add_setting("H1-settings", array(
         'default' => '#000000',
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => $sanitize_callback,
     ));
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'H1_customization', array(
         'label' => __('Change Color', 'Edux'),
         'section' => 'H1-section', 
-        'settings' => 'H1-settings'
+        'settings' => 'H1-settings',
     )));
 
 
@@ -42,6 +43,7 @@ function color_customize_register($wp_customize){
             $wp_customize->add_setting("P-settings", array(
                 'default' => __('#000000'),
                 'transport' => 'refresh',
+                'sanitize_callback' => $sanitize_callback
             ));
 
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'P_customization', array(
@@ -57,11 +59,10 @@ function Edux_customize_css(){
     ?>
     <style>
         .cur{
-            color: red;
+            color: <?php  echo esc_url( get_theme_mod('H1-settings', "#00000") )?> !important;
         }
         #site_desc1{
-            background: <?php echo get_theme_mod('P-settings', "#00000")?> !important;
-            font-weight: bold;
+            color: <?php  echo esc_url( get_theme_mod('P-settings', "#00000") )?> !important;
         }
     </style>
 

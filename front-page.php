@@ -27,7 +27,6 @@ get_header();
                 </div>
             </div>
             <div class="col-md-1">
-               <H1><?php echo get_theme_mod('P-settings')?></H1>
             </div>
         </div>
     </div>
@@ -246,6 +245,7 @@ get_header();
                 <?php endif; ?>
                     </div>
         </div>
+
             
 <?php
 get_footer();

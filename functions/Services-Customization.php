@@ -20,7 +20,8 @@ function service_customize_register($wp_customize){
             
     $wp_customize->add_setting("service-title-1-settings", array(
         'default' => __("Service 1"),
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => $sanitize_callback,
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'service_customization1', array(
@@ -40,7 +41,8 @@ function service_customize_register($wp_customize){
                     
             $wp_customize->add_setting("service-body-1-settings", array(
                 'default' => __("Service 1 detail description customization"),
-                'transport' => 'refresh'
+                'transport' => 'refresh',
+                'sanitize_callback' => $sanitize_callback,
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'service_customization11', array(
@@ -59,7 +61,8 @@ function service_customize_register($wp_customize){
 
     $wp_customize->add_setting("service-title-2-settings", array(
         'default' => __("Service 2"),
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => $sanitize_callback,
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'service_customization2', array(
@@ -78,7 +81,8 @@ function service_customize_register($wp_customize){
 
             $wp_customize->add_setting("service-body-2-settings", array(
                 'default' => __("Service 2 detail description customization"),
-                'transport' => 'refresh'
+                'transport' => 'refresh',
+                'sanitize_callback' => $sanitize_callback,
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'service_customization22', array(
@@ -96,7 +100,8 @@ function service_customize_register($wp_customize){
 
     $wp_customize->add_setting("service-title-3-settings", array(
         'default' => __("Service 3"),
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => $sanitize_callback,
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'service_customization3', array(
@@ -115,7 +120,8 @@ function service_customize_register($wp_customize){
 
             $wp_customize->add_setting("service-body-3-settings", array(
                 'default' => __("Service 3 detail description customization"),
-                'transport' => 'refresh'
+                'transport' => 'refresh',
+                'sanitize_callback' => $sanitize_callback,
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'service_customization33', array(

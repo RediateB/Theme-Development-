@@ -13,7 +13,7 @@ get_header();
     <div class="conatiner">
         <div class="row">
             <div class="col-md-4">
-                <img src="<?php bloginfo('template_url')?>/assets/images/edu.jpg" style="width: 100%; margin-bottom: 50px;" alt="">
+                <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/edu.jpg" style="width: 100%; margin-bottom: 50px;" alt="">
             </div>
             <div class="col-md-5"style=" marign-right: 5px;">
                 <h1>Edu online learning system</h1>

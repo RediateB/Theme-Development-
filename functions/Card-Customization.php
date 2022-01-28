@@ -18,7 +18,8 @@ function EduTheme_admin_customize_register($wp_customize){
             
     $wp_customize->add_setting("Admin-name-1-settings", array(
         'default' => __("Head of Office"),
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => $sanitize_callback,
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_1_customization_name', array(
@@ -39,7 +40,8 @@ function EduTheme_admin_customize_register($wp_customize){
             $wp_customize->add_setting("Admin-description-1-settings", array(
                 'default' => __("This is a wider card with supporting text below as a natural l
                                 ead-in to additional content. This content is a little bit longer."),
-                'transport' => 'refresh'
+                'transport' => 'refresh',
+                'sanitize_callback' => $sanitize_callback,
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_1_customization_desc', array(
@@ -59,7 +61,8 @@ function EduTheme_admin_customize_register($wp_customize){
 
                         $wp_customize->add_setting("Admin-image-1-settings", array(
                             'default' => get_template_directory_uri() . '/assets/images/aaron-burden-6jYoil2GhVk-unsplash.jpg',
-                            'transport' => 'postMessage'
+                            'transport' => 'postMessage',
+                            'sanitize_callback' => $sanitize_callback,
                         ));
                         
                         $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'admin_1_customization_img', array(
@@ -85,7 +88,8 @@ function EduTheme_admin_customize_register($wp_customize){
             
     $wp_customize->add_setting("Admin-name-2-settings", array(
         'default' => __("Deputy Head of Office"),
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => $sanitize_callback,
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_2_customization_name', array(
@@ -105,7 +109,8 @@ function EduTheme_admin_customize_register($wp_customize){
                     
             $wp_customize->add_setting("Admin-description-2-settings", array(
                 'default' => __("This card has supporting text below as a natural lead-in to additional content."),
-                'transport' => 'refresh'
+                'transport' => 'refresh',
+                'sanitize_callback' => $sanitize_callback,
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_2_customization_desc', array(
@@ -125,7 +130,8 @@ function EduTheme_admin_customize_register($wp_customize){
 
                         $wp_customize->add_setting("Admin-image-2-settings", array(
                             'default' => get_template_directory_uri() . '/assets/images/aaron-burden-6jYoil2GhVk-unsplash.jpg',
-                            'transport' => 'postMessage'
+                            'transport' => 'postMessage',
+                            'sanitize_callback' => $sanitize_callback,
                         ));
                         
                         $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'admin_2_customization_img', array(
@@ -150,7 +156,8 @@ function EduTheme_admin_customize_register($wp_customize){
             
     $wp_customize->add_setting("Admin-name-3-settings", array(
         'default' => __("HR Department Head"),
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => $sanitize_callback,
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_3_customization_name', array(
@@ -171,7 +178,8 @@ function EduTheme_admin_customize_register($wp_customize){
             $wp_customize->add_setting("Admin-description-3-settings", array(
                 'default' => __("This is a wider card with supporting text below as a natural lead-in to additional content. 
                                 This card has even longer content than the first to show that equal height action."),
-                'transport' => 'refresh'
+                'transport' => 'refresh',
+                'sanitize_callback' => $sanitize_callback,
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_3_customization_desc', array(
@@ -190,7 +198,8 @@ function EduTheme_admin_customize_register($wp_customize){
 
                         $wp_customize->add_setting("Admin-image-3-settings", array(
                             'default' => get_template_directory_uri() . '/assets/images/aaron-burden-6jYoil2GhVk-unsplash.jpg',
-                            'transport' => 'postMessage'
+                            'transport' => 'postMessage',
+                            'sanitize_callback' => $sanitize_callback,
                         ));
                         
                         $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'admin_3_customization_img', array(

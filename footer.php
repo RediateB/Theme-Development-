@@ -1,14 +1,19 @@
+
+ <div class="padding-top-footer">
+
+</div>
+
 <footer class="footer" style="padding: 21px;"> 
     <div class="foot container"> 
       <div class="foot row"> 
         <div class="footer-col col-md-4"> 
-        
+              <?php dynamic_sidebar('footer-sidebar-1')?>
         </div>
         <div class="footer-col col-md-4"> 
-                   
+              <?php dynamic_sidebar('footer-sidebar-2')?>
         </div>
-                <div class="footer-col col-md-4"> 
-          
+        <div class="footer-col col-md-4"> 
+              <?php dynamic_sidebar('footer-sidebar-3')?>
         </div>
       </div>
 
@@ -32,5 +37,6 @@
     }
   }
 </script>
+<?php wp_footer(); ?>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name')?></title>
- <!-- Bootstrap CDN -->
+    <!-- Bootstrap CDN -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <!-- End of  Bootstrap CDN -->
 
@@ -13,12 +13,14 @@
     <link rel="icon" href="homepage/images/fevicon.png" type="image/gif" /> -->
 
 
- <!-- style css -->
- <link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/style-ThemeDevelopment.css">
- <link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/blog-page-style.css">
- 
+    <!-- style css -->
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() )?>/assets/css/style-ThemeDevelopment.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() )?>/assets/css/blog-page-style.css">
+    <?php wp_head(); ?>
+    <?php wp_link_pages( $args ); ?>
 </head>
-<body>
+<body <?php body_class( $class ); ?>>
+<?php wp_body_open(); ?>
 <nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container "> 
 			<figure class="site-logo-img">
@@ -27,7 +29,7 @@
 						the_custom_logo();
 					}
 				?>
-			<a class="navbar-brand header-link" href="#" ><?php bloginfo('name')?></a>
+			<a class="navbar-brand header-link" href="<?php echo esc_url(home_url()); ?>" ><?php bloginfo('name')?></a>
 			</figure>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>

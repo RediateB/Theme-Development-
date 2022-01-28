@@ -4,7 +4,7 @@ get_header();
 ?>
 
 
-<div class="main-layout">
+<div class="main-layout" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <!-- blog_main -->
     <div class="blog_main">
       <div class="container">
@@ -54,7 +54,7 @@ get_header();
                               <h4 class="flot_left1">Post By : <?php  the_author(); ?></h4>
                               <h4 class="flot_left1 left2">Date : <?php  the_date(); ?></h4>
                               <h4 class="flot_left1 left2">
-                                <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                                <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/comm.png" alt="#" />
                                       <?php comments_number()?>
                               </h4>
                             </div>
@@ -94,7 +94,7 @@ get_header();
                         <h4 class="flot_left1">Post By : <?php  the_author(); ?></h4>
                         <h4 class="flot_left1 left2">Date : <?php  the_date(); ?></h4>
                         <h4 class="flot_left1 left2">
-                        <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                        <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/comm.png" alt="#" />
                               <?php comments_number()?>
                         </h4>
                       </div>
@@ -124,7 +124,7 @@ get_header();
                           <h4 class="flot_left1">Post By : <?php  the_author(); ?></h4>
                           <h4 class="flot_left1 left2">Date : <?php  the_date(); ?></h4>
                           <h4 class="flot_left1 left2">
-                              <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                              <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/comm.png" alt="#" />
                                     <?php comments_number()?>
                           </h4>
                         </div>
@@ -169,7 +169,7 @@ get_header();
                                 <h4 class="flot_left1">Post By : <?php  the_author(); ?></h4>
                                 <h4 class="flot_left1 left2">Date : <?php  the_date(); ?></h4>
                                 <h4 class="flot_left1 left2">
-                                <img src="<?php bloginfo('template_url')?>/assets/images/comm.png" alt="#" />
+                                <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/images/comm.png" alt="#" />
                                       <?php comments_number()?>
                                 </h4>
                               </div>
