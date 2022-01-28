@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name')?></title>
     <!-- Bootstrap CDN -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() )?>/assets/css/bootstrap.min.css">
     <!-- End of  Bootstrap CDN -->
 
     <!-- fevicon
