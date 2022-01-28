@@ -1,30 +1,22 @@
-<footer style="padding: 21px;"> 
-		<div class="container"> 
-    <?php dynamic_sidebar('left-sidebar-1')?>
-    <?php dynamic_sidebar('left-sidebar-2')?>
-			<div class="row"> 
-				<div class="col-md-4"> 
-					This website copyright© by team alulu
-				</div>
-				<div class="col-md-4"> 
-                    <ul >
-                        <li class="nav-item active">
-                            <a href="#">Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a  href="#">Generic</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Elements</a>
-                        </li>
-                    </ul>
-				</div>
-                <div class="col-md-4"> 
-					icons
-				</div>
-			</div>
-		</div>
-	</footer>
+<footer class="footer" style="padding: 21px;"> 
+    <div class="foot container"> 
+      <div class="foot row"> 
+        <div class="footer-col col-md-4"> 
+        
+        </div>
+        <div class="footer-col col-md-4"> 
+                   
+        </div>
+                <div class="footer-col col-md-4"> 
+          
+        </div>
+      </div>
+
+      <div class="copyright">
+      This website copyright© by team alulu
+</div>
+    </div>
+  </footer>
 
 
 
