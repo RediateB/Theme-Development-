@@ -27,8 +27,8 @@
 						the_custom_logo();
 					}
 				?>
-			</figure>
 			<a class="navbar-brand header-link" href="#" ><?php bloginfo('name')?></a>
+			</figure>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>

@@ -34,7 +34,7 @@ get_header();
         
     
     <div class="container" style="margin-top: 150px;">
-        <div class="row">
+        <div class="row justify-content-md-center">
            <div class="card-group">
         <div class="card" style="margin-right: 30px;">
             <?php
@@ -178,9 +178,7 @@ get_header();
          </div>
       </div>
 
- <div class="container" style="margin-top: 40px;">
-        <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 150px; margin-bottom: 100px;" >About Us</h1>
-</div>
+ 
 <div style="margin-bottom: 40px;"><hr> </div>
     <div class="conatiner">
         
@@ -221,31 +219,35 @@ get_header();
     <div class="container" style="margin-top: 100px;">
         <h1 style="text-align: center; margin-bottom: 40px; font-weight: 700; background-color: #63ffc2; width: 100%; height: 100px; padding-top: 30px; margin-top: 50px;" >Latest Blog</h1>
 
-        <?php 
-   // the query
-   $the_query = new WP_Query( array(
-    //  'category_name' => 'all',
-      'posts_per_page' => 3,
-   )); 
-?>
+        <div class="row">
+          <?php 
+          $the_query = new WP_Query(array(
+            'posts_per_page' => 3
+          ));
 
-<?php if ( $the_query->have_posts() ) : ?>
-  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          if ( $the_query->have_posts() ) :
+            while ( $the_query->have_posts()) : $the_query->the_post();
+          ?>
+          
+              <div class="card col pl-2 pr-2 ml-1 mr-1">
+                <div class="card-body">
+                  <h3 class="card-title"><?php the_title(); ?></h3>
+                    <p>
+                    <?php the_excerpt(); ?>
+                    </p>
+                </div>
+              </div>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
 
-    <?php the_title(); ?>
-    <?php the_excerpt(); ?>
-
-  <?php endwhile; ?>
-  <?php wp_reset_postdata(); ?>
-
-<?php else : ?>
-  <p><?php __('No News'); ?></p>
-<?php endif; ?>
-    </div>
-
-    
-    <?php
-
+              <?php else : ?>
+              
+                <p><?php __('No News'); ?></p>
+                <?php endif; ?>
+                    </div>
+        </div>
+            
+<?php
 get_footer();
 
 ?>
