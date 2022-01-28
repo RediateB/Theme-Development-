@@ -1,16 +1,16 @@
 <?php
 
 // Homepage Administrators  Customization 
-function admin_customize_register($wp_customize){
+function EduTheme_admin_customize_register($wp_customize){
     $wp_customize->add_panel('admin_setting', array(
         'priority' => 11,
-        'title' => __('Administrators', 'Edux'),
-        'description'      => __( 'Administrators information customization', 'Edux' ),
+        'title' => __('Administrators', 'EduTheme'),
+        'description'      => __( 'Administrators information customization', 'EduTheme' ),
     ));
 
     // Admin 1 Title Edit
     $wp_customize->add_section("Admin-name-1-section", array(
-        'title' => __("Admin 1 Name", "Edux"),
+        'title' => __("Admin 1 Name", "EduTheme"),
         'priority' => 1,
         'panel' => 'admin_setting'
     ));
@@ -22,7 +22,7 @@ function admin_customize_register($wp_customize){
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_1_customization_name', array(
-        'label' => __('Change Admin', 'Edux'),
+        'label' => __('Change Admin', 'EduTheme'),
         'section' => 'Admin-name-1-section', 
         'settings' => 'Admin-name-1-settings'
     )));
@@ -30,7 +30,7 @@ function admin_customize_register($wp_customize){
 
             // Admin 1 Title Edit
             $wp_customize->add_section("Admin-description-1-section", array(
-                'title' => __("Admin 1 Description", "Edux"),
+                'title' => __("Admin 1 Description", "EduTheme"),
                 'priority' => 2,
                 'panel' => 'admin_setting'
             ));
@@ -43,7 +43,7 @@ function admin_customize_register($wp_customize){
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_1_customization_desc', array(
-                'label' => __('Change Admin', 'Edux'),
+                'label' => __('Change Admin', 'EduTheme'),
                 'section' => 'Admin-description-1-section', 
                 'settings' => 'Admin-description-1-settings'
             )));
@@ -52,7 +52,7 @@ function admin_customize_register($wp_customize){
 
                         // Admin 1 Image edit
                         $wp_customize->add_section('Admin-image-1-section', array(
-                            'title' => __("Admin 1 Image", 'Edux'),
+                            'title' => __("Admin 1 Image", 'EduTheme'),
                             'priority' => 3,
                             'panel' => 'admin_setting'
                         ));
@@ -63,7 +63,7 @@ function admin_customize_register($wp_customize){
                         ));
                         
                         $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'admin_1_customization_img', array(
-                            'label' => __('Change Admin', 'Edux'),
+                            'label' => __('Change Admin', 'EduTheme'),
                             'section' => 'Admin-image-1-section',
                             'settings' => 'Admin-image-1-settings',
                             'height'=>100, // cropper Height
@@ -77,7 +77,7 @@ function admin_customize_register($wp_customize){
 
     // Admin 2 Title Edit
     $wp_customize->add_section("Admin-name-2-section", array(
-        'title' => __("Admin 2 Name", "Edux"),
+        'title' => __("Admin 2 Name", "EduTheme"),
         'priority' => 4,
         'panel' => 'admin_setting'
     ));
@@ -89,7 +89,7 @@ function admin_customize_register($wp_customize){
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_2_customization_name', array(
-        'label' => __('Change Service', 'Edux'),
+        'label' => __('Change Service', 'EduTheme'),
         'section' => 'Admin-name-2-section', 
         'settings' => 'Admin-name-2-settings'
     )));
@@ -97,7 +97,7 @@ function admin_customize_register($wp_customize){
 
             // Admin 2 Title Edit
             $wp_customize->add_section("Admin-description-2-section", array(
-                'title' => __("Admin 2 Description", "Edux"),
+                'title' => __("Admin 2 Description", "EduTheme"),
                 'priority' => 5,
                 'panel' => 'admin_setting'
             ));
@@ -109,7 +109,7 @@ function admin_customize_register($wp_customize){
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_2_customization_desc', array(
-                'label' => __('Change Admin', 'Edux'),
+                'label' => __('Change Admin', 'EduTheme'),
                 'section' => 'Admin-description-2-section', 
                 'settings' => 'Admin-description-2-settings'
             )));
@@ -118,7 +118,7 @@ function admin_customize_register($wp_customize){
 
                         // Admin 2 Image edit
                         $wp_customize->add_section('Admin-image-2-section', array(
-                            'title' => __("Admin 2 Image", 'Edux'),
+                            'title' => __("Admin 2 Image", 'EduTheme'),
                             'priority' => 6,
                             'panel' => 'admin_setting'
                         ));
@@ -129,7 +129,7 @@ function admin_customize_register($wp_customize){
                         ));
                         
                         $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'admin_2_customization_img', array(
-                            'label' => __('Change Admin', 'Edux'),
+                            'label' => __('Change Admin', 'EduTheme'),
                             'section' => 'Admin-image-2-section',
                             'settings' => 'Admin-image-2-settings',
                             'height'=>100, // cropper Height
@@ -142,7 +142,7 @@ function admin_customize_register($wp_customize){
     
     // Admin 3 Title Edit
     $wp_customize->add_section("Admin-name-3-section", array(
-        'title' => __("Admin 3 Name", "Edux"),
+        'title' => __("Admin 3 Name", "EduTheme"),
         'priority' => 7,
         'panel' => 'admin_setting'
     ));
@@ -154,7 +154,7 @@ function admin_customize_register($wp_customize){
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_3_customization_name', array(
-        'label' => __('Change Admin', 'Edux'),
+        'label' => __('Change Admin', 'EduTheme'),
         'section' => 'Admin-name-3-section', 
         'settings' => 'Admin-name-3-settings'
     )));
@@ -162,7 +162,7 @@ function admin_customize_register($wp_customize){
 
             // Admin 3 Title Edit
             $wp_customize->add_section("Admin-description-3-section", array(
-                'title' => __("Admin 3 Description", "Edux"),
+                'title' => __("Admin 3 Description", "EduTheme"),
                 'priority' => 8,
                 'panel' => 'admin_setting'
             ));
@@ -175,7 +175,7 @@ function admin_customize_register($wp_customize){
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'admin_3_customization_desc', array(
-                'label' => __('Change Admin', 'Edux'),
+                'label' => __('Change Admin', 'EduTheme'),
                 'section' => 'Admin-description-3-section', 
                 'settings' => 'Admin-description-3-settings'
             )));
@@ -183,7 +183,7 @@ function admin_customize_register($wp_customize){
 
                         // Admin 3 Image edit
                         $wp_customize->add_section('Admin-image-3-section', array(
-                            'title' => __("Admin 3 Image", 'Edux'),
+                            'title' => __("Admin 3 Image", 'EduTheme'),
                             'priority' => 9,
                             'panel' => 'admin_setting'
                         ));
@@ -194,7 +194,7 @@ function admin_customize_register($wp_customize){
                         ));
                         
                         $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'admin_3_customization_img', array(
-                            'label' => __('Change Admin', 'Edux'),
+                            'label' => __('Change Admin', 'EduTheme'),
                             'section' => 'Admin-image-3-section',
                             'settings' => 'Admin-image-3-settings',
                             'height'=>100, // cropper Height
@@ -206,5 +206,5 @@ function admin_customize_register($wp_customize){
     
 }
 
-add_action('customize_register', 'admin_customize_register');
+add_action('customize_register', 'EduTheme_admin_customize_register');
 ?>

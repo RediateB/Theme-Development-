@@ -15,7 +15,7 @@ get_header();
                     <h1><strong class="cur">
                         <?php echo get_bloginfo( 'name' )?>
                     </strong><br></h1>
-                        <p class="site_desc">
+                        <p class="site_desc" id="site_desc1">
                         <?php echo get_bloginfo( 'description' )?>
                         </p>
                        
@@ -27,7 +27,7 @@ get_header();
                 </div>
             </div>
             <div class="col-md-1">
-               
+               <H1><?php echo get_theme_mod('P-settings')?></H1>
             </div>
         </div>
     </div>

@@ -53,19 +53,20 @@ function color_customize_register($wp_customize){
 
 add_action('customize_register', 'color_customize_register');
 
-function theme_customize_css(){
+function Edux_customize_css(){
     ?>
     <style>
         .cur{
             color: red;
         }
-        .site_desc{
-            background: <?php echo get_theme_mod('P-settings')?> !important;
+        #site_desc1{
+            background: <?php echo get_theme_mod('P-settings', "#00000")?> !important;
+            font-weight: bold;
         }
     </style>
 
     <?php
 }
 
-add_action('wp_head', 'theme_customize_css');
+add_action('wp_head', 'Edux_customize_css');
 ?>
